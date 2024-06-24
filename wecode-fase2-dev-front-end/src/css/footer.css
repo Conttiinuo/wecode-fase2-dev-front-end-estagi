@@ -1,0 +1,50 @@
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 424px;
+    background: var(--vermelho-bebece);
+    gap: 11rem;
+}
+
+.logo-bebece-footer {
+    width: 790px;
+    height: 184px;
+}
+
+.infos-gerais {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.icones-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.empresa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.politicas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.empresa h3, .politicas h3 {
+    font-family: var(--opensans-fonte);
+    font-weight: 600;
+    color: var(--branco);
+}
+
+.empresa a, .politicas a {
+    font-family: var(--opensans-fonte);
+    font-size: .875rem;
+    color: var(--branco);
+}

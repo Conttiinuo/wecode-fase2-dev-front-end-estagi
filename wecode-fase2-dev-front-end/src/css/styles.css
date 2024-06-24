@@ -1,0 +1,20 @@
+@import 'menu.css';
+@import 'sections.css';
+@import 'menudropdown.css';
+@import 'card.css';
+@import 'minicart.css';
+@import 'newsletter.css';
+@import 'footer.css';
+
+:root {
+  --vermelho-bebece: #b11b26;
+  --branco: #fff;
+  --rosa-palido: #f3aa9b;
+  --opensans-fonte: 'Open Sans';
+  --preto: #000;
+  --preco-cinza: #8a8a8a;
+  --cinza-escuro: #1d1d1d;
+  --swiper-navigation-size: 1rem;
+  --branquin: #EEEEEE;
+  --bebece-bege: #FFE9DC;
+}

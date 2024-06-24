@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modalCep.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <script type="module" src="../js/main.js" defer></script>
+    <title>bebecê</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="menu-locate">
+            <p>Você está em: <a class="localidade" href="#"></a></p>
+            <a class="alterar-localidade" href="#">Alterar</a>
+        </div>
+
+        <div class="menu-flex">
+            <nav class="menu-nav">
+                <a href="#">
+                    <img id="logo-branca-principal" src="../../public/logo-branco.svg" alt="Logo bebecê">
+                </a>
+                <ul class="menu-produtos">
+                    <li data-dropdown><a href="#produtos">Produtos &nbsp ˅</a></li>
+                    <li><a href="#lancamento">Lançamentos</a></li>
+                    <li><a href="#outlet">Outlet</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-icones">
+                <a href="#" class="icones-menu-padrao">
+                    <img id="icone-busca" src="../../public/icone-search-branco.svg" alt="icone de pesquisa">
+                </a>
+                <a href="#" class="icones-menu-padrao">
+                    <img id="icone-conta" src="../../public/icone-conta.svg" alt="icone de conta">
+                </a>
+                <a href="#" class="icones-menu-padrao carrinho-header">
+                    <img id="icone-sacola" src="../../public/shopping-bag1-branco.svg" alt="icone sacola de compras">
+                    <p>0</p>
+                </a>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <ul class="dropdown-menu-produtos">
+                <li><a href="https://www.bebece.com.br/sapatos" data-img-src="../../public/static/images/produtos/sapatos.png">Sapatos</a></li>
+                <li><a href="https://www.bebece.com.br/sapatos/scarpins" data-img-src="../../public/static/images/produtos/scarpin.png">Scarpins</a></li>
+                <li><a href="https://www.bebece.com.br/sandalias" data-img-src="../../public/static/images/produtos/sandalia.png">Sandálias</a></li>
+                <li><a href="https://www.bebece.com.br/botas" data-img-src="../../public/static/images/produtos/bota.png">Botas</a></li>
+            </ul>
+            <div id="image-products-container"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="body-section1">
+            <div class="swiper" id="swiper-principal">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img id="slide-1" src="../../public/static/banner-principal1.png" alt="banner simple and beauty">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img id="slide-1" src="../../public/static/banner-principal2.png" alt="banner simple and beauty">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="botao-conheca-agora">Conheça agora!</a>
+
+                <div class="swiper-button-prev" id="prev-principal"></div>
+                <div class="swiper-button-next" id="next-principal"></div>
+                <div class="swiper-pagination" id="pagination-principal"></div>
+
+            </div>
+        </section>
+    </main>
+
+    <section class="body-section2">
+        <h2>Categorias</h2>
+        <div class="categorias-section2">
+            <div class="categorias-img">
+                <img src="../../public/static/images/botas-categoria.png" alt="imagem de duas botas pretas">
+                <p>Botas</p>
+            </div>
+            <div class="categorias-img">
+                <img src="../../public/static/images/scarpins-categoria.png" alt="imagem de duas scarpins">
+                <p>Scarpins</p>
+            </div>
+            <div class="categorias-img">
+                <img src="../../public/static/images/sapatilhas-categoria.png" alt="imagem de duas sapatilhas">
+                <p>Sapatilhas</p>
+            </div>
+            <div class="categorias-img">
+                <img src="../../public/static/images/sandalias-categorias.png" alt="imagem de duas sandalias">
+                <p>Sandalias</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="body-section3">
+        <div class="banners-body-section3">
+            <img src="../../public/static/banner-be-simple.png" alt="banner seja simples">
+            <img src="../../public/static/banner-pequeno.png" alt="banner mulher de salto">
+        </div>
+    </section>
+
+    <section class="body-section4">
+        <div id="product-container"></div>
+    </section>
+
+    <section class="body-section-card">
+        <h2 class="title-card" id="lancamento">Lançamentos</h2>
+        <div class="container-product-card" id="productSection"></div>
+    </section>
+
+    <section class="body-section5" id="outlet">
+        <h2>Conheça mais</h2>
+        <p class="section5-subtitle">Fique por dentro de tudo que acontece no Bebecê</p>
+        <div class="section5-content">
+            <div class="section5-content-blocos">
+                <div class="section5-content-imgs">
+                    <img src="../../public/static/banner-besimple.png" alt="">
+                </div>
+                <h3>é amanhã</h3>
+                <p>SIMPLE and TRUE: lançamento da nova coleção Outono Inverno 2024 da Bebecê ❤️</p>
+                <a href="#">Saiba mais!</a>
+            </div>
+
+            <div class="section5-content-blocos">
+                <div class="section5-content-imgs">
+                    <img src="../../public/static/banner-sapatos.png" alt="">
+                </div>
+                <h3>novo logo, mesma essência</h3>
+                <p>Trazendo conforto através das linhas finas e grossas + uma paleta de cores vibrante e cheia de atitude, o resultado é um visual que traduz nossa essência: autêntica e surpreendente!</p>
+                <a href="#">Saiba mais!</a>
+            </div>
+
+            <div class="section5-content-blocos">
+                <div class="section5-content-imgs">
+                    <img src="../../public/static/banner-simpleandtrue.png" alt="">
+                </div>
+                <h3>descubra o glamour em cada</h3>
+                <p>Quer brilhar ainda mais neste inverno sem abrir mão do conforto? Esta mule é perfeita para você. ✨</p>
+                <a href="#">Saiba mais!</a>
+            </div>
+        </div>
+    </section>
+
+    <aside class="newsletter-body">
+        <p class="cadast">Cadastre-se e receba <strong>10% OFF</strong> na sua primeira compra!</p>
+
+        <div class="infos-newsletter">
+            <input class="input-email" type="email" id="email-input" placeholder="Digite seu e-mail">
+            <button class="botao-enviar" id="botao-enviar">Enviar</button>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <img class="logo-bebece-footer" src="../../public/bebece-logo-footer.svg" alt="">
+
+        <div class="infos-gerais">
+            <div class="icones-social">
+                <a href="https://www.instagram.com/bebece/"><img src="../../public/instagram.svg" alt=""></a>
+                <a href="https://www.facebook.com/CalcadosBebece"><img src="../../public/facebook.svg" alt=""></a>
+                <a href="https://br.pinterest.com/bebececalcados/"><img src="../../public/pinterest.svg" alt=""></a>
+                <a href="https://x.com/bebececalzados?lang=es"><img src="../../public/twitter.svg" alt=""></a>
+                <a href="https://www.tiktok.com/@bebece.br"><img src="../../public/tik-tok.svg" alt=""></a>
+            </div>
+
+            <div class="empresa">
+                <h3>Sobre a empresa</h3>
+                <a href="https://www.bebece.com.br/institucional">Quem somos</a>
+                <a href="https://www.bebece.com.br/fale-conosco">Fale conosco</a>
+            </div>
+
+            <div class="politicas">
+                <h3>Políticas</h3>
+                <a href="https://www.bebece.com.br/politicas">Política de Privacidade</a>
+                <a href="https://www.bebece.com.br/politicas">Termos de Uso</a>
+                <a href="https://www.bebece.com.br/politicas">Política de Entrega</a>
+                <a href="https://www.bebece.com.br/politicas">Política de Cupom e Descontos </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Cep -->
+    <div id="modalBackground" class="modal-background">
+        <div class="modal-cep">
+            <div class="close-button-cep-modal">
+                <button type="button" class="close-button-cep"><img src="../../public/close-icon.svg" alt=""></button>
+            </div>
+            <h2>Personalize sua experiência e encontre produtos perto de você!</h2>
+
+            <div class="modal-cep-inputs">
+                <div class="codigo-postal">
+                    <p>Código postal*</p>
+                    <input type="text" required placeholder="00000-000" pattern="\d{5}-?\d{3}">
+                </div>
+
+                <div class="cidade-estado">
+                    <div class="cidade">
+                        <p>Cidade</p>
+                        <input type="text" required placeholder="Opcional">
+                    </div>
+
+                    <div class="estado">
+                        <p>Estado</p>
+                        <input type="text" required placeholder="Opcional">
+                    </div>
+                </div>
+                <button class="save-button" type="button">Salvar endereço</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Carrin and Vitrinezada -->
+    <div id="minicart" class="minicart">
+        <span class="close-button-minicart" onclick="closeMinicart()">&times;</span>
+    </div>
+    <div id="sizeSelectionModal" class="modal-vitrine">
+        <div class="modal-content">
+            <span class="close-button" onclick="document.getElementById('sizeSelectionModal').style.display='none'">&times;</span>
+            <div class="modal-geral">
+                <div>
+                    <img class="modal-image" src="" alt="Produto">
+                </div>
+                <div class="info-modal">
+                    <h2 class="modal-product-name"></h2>
+
+
+                    <div class="size-options">
+                        <input type="radio" name="size" value="34" id="size-34"><label for="size-34">34</label>
+                        <input type="radio" name="size" value="35" id="size-35"><label for="size-35">35</label>
+                        <input type="radio" name="size" value="36" id="size-36"><label for="size-36">36</label>
+                        <input type="radio" name="size" value="37" id="size-37"><label for="size-37">37</label>
+                        <input type="radio" name="size" value="38" id="size-38"><label for="size-38">38</label>
+                        <input type="radio" name="size" value="39" id="size-39"><label for="size-39">39</label>
+                        <input type="radio" name="size" value="40" id="size-40"><label for="size-40">40</label>
+                    </div>
+                    <button id="addToCartButton">
+                        Adicionar ao carrinho
+                        <img src="../../public/bag-addtocart.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

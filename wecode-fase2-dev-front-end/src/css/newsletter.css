@@ -1,0 +1,84 @@
+.newsletter-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 110px;
+    background: var(--bebece-bege);
+    gap: 3rem;
+}
+
+.cadast {
+    font: 1.125rem var(--opensans-fonte);
+    color: var(--vermelho-bebece);
+}
+
+.cadast strong {
+    font-weight: 600;
+}
+
+.input-email {
+        width: 300px;
+        height: 46px;
+        border: 1px solid #CECECE;
+        outline: 0;
+}
+
+.input-email::placeholder {
+    position: absolute;
+    left: 24px;
+}
+
+.botao-enviar {
+        font: .875rem var(--opensans-fonte);
+        width: 300px;
+        height: 46px;
+        border: none;
+        background: var(--vermelho-bebece);
+        color: var(--branco);
+        cursor: pointer;
+    }
+
+.botao-enviar:hover {
+    background: #cc0000;
+    transition: .5s;
+}
+
+
+.infos-newsletter .botao-enviar {
+    font: .875rem var(--opensans-fonte);
+    width: 300px;
+    height: 46px;
+    border: none;
+    background: var(--vermelho-bebece);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.botao-enviado {
+    font: .875rem var(--opensans-fonte);
+    width: 144px;
+    height: 46px;
+    border: none;
+    background: var(--vermelho-bebece);
+    color: var(--branco);
+    cursor: pointer;
+    border-radius: 0 100px 100px 0;
+}
+
+.input-bemvinda {
+    max-width: 230px;
+    text-align: center;
+    border-radius: 100px 0 0 100px;
+    color: var(--vermelho-bebece);
+    border: 1px dashed #CECECE;
+    outline: 0;
+}
+
+.copia {
+    display: flex;
+}
+
+.cadast-alternativo {
+    color: var(--cinza-escuro);
+}
